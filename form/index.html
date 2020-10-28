@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html"/>
+  <link	rel="stylesheet" type="text/css" href="style.css"/>	
+ </head>
+ <body>
+	
+	<div><h1>Форма регистрации</h1></div>
+	
+	<form action="form_proccessing" method="POST">
+	
+		<div><span>Ваше имя:</span> <input type="text" name="lastname" required/></div>
+		
+		<div><span>Ваш email:</span> <input type="email" name="email" required/></div>
+		
+		<div><span>Ваш возраст:</span> <input type="number" name="age" min="1" max="100" step="1"/></div>
+		
+		<div><span>Ваше фото: </span><input type="file" name="photo" accept="image/*"/></div>
+				
+		<div>
+		<span>Пол:</span> 
+		<select name="gender">
+			<option checked>Не выбрано</option>
+			<option value="male">Мужской</option>
+			<option value="female">Женский</option>
+		</select>
+		</div>
+		
+		<div id="radio">
+		<span>Выберите город, где вы живёте</span>
+		<p><input type="radio" name="city" value="msk">Москва</p>
+		<p><input type="radio" name="city" value="spb">Санкт-Петербург</p>
+		<p><input type="radio" name="city" value="ekb">Екатеринбург</p>
+		</div>
+		
+		<div><span>Выберите интересы пользователя</span></div>
+		
+		<div class="choice">
+		<input type="checkbox" name="food"> Еда 
+		<input type="checkbox" name="series"> Сериалы 
+		<input type="checkbox" name="games"> Игры 
+		<input type="checkbox" name="books"> Книги   
+		<input type="checkbox" name="travels"> Путешествия 
+		</div>
+		
+		<div align="center"><input type="submit" name="submit" value="Отправить"></div>
+	
+	</form>
+	
+ </body>
+</html>
+

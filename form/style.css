@@ -1,0 +1,43 @@
+* 	{
+	font-family: "Trebuchet MS"
+	max-width: 446px;	
+	}
+
+div {
+	padding: 10px;
+	max-width: 430px;	
+	background-color: #D3D3D3;
+	}
+	
+<!::first-letter{color:blue; font-size:	34px;}>
+	
+input[type="text"], input[type="number"], input[type="email"]
+	{	
+	border:	2px	solid black;	
+	}
+	
+div.choice 	
+	{
+	border:	3px	groove gray;	
+	padding: 7px;
+	}
+	
+#radio	
+	{
+	background-color: #D3D3D3;
+	}
+		
+form 
+	{
+	border:	2px	groove gray;
+	max-width: 446px;	
+	}
+
+div span
+	{
+	color:blue;	
+	}
+	
+h1  {
+	font-size: 26pt; 
+	}

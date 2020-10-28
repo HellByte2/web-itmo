@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html"/>
+	</head>
+ 
+	<body>
+		<div class="content">
+			<img src="images/htmlcss1-img_writer-avatar.jpg" id="header" width="150" height="150">
+			<h3 class="byline"><a name="top">Article By: Jane Dover</a></h3>
+			<h1>How the Rise of Soccer in the US Is Changing the Face of Youth Sports</h1>
+			<h2>The focus on soccer in youth sports <a href="http://www.google.com">programs</a> is exploding nation-wide</h2>
+			<p>When the first <a href="http://www.yahoo.com">World Cup</a> arrived in the US in the 90's everyone officially declared that soccer was it. Well it's taken it's time but we can definitely see the influence of soccer, especially women's soccer, across the US. This year, 3 million kids 
+				played in youth soccer leagues with 2/3 of those leagues for girls. In fact, in the 12-17 age range the MLS has surpassed the MLB and NFL in popularity.</p>
+			<p><a name="mid">Part of this meteoric rise can be attributed to the impressively soaring ad dollars being pumped into the Women's World Cup games in 2014.</a> The women's games generated $40 million for Fox, that's definitely not chump change. And those advertisers,
+				like ATT, <a href="http://www.yandex.ru/">Coca Cola</a>, Verizon, Nike, Visa, and other heavy hitters, are working to make sure they see those numbers grow year after year by investing in youth soccer facilities and promoting programs across the country. </p>
+			<p><a name="bottom">Now that big business is involved you can be assured you'll see a continued rise in popularity in soccer across the country for years to come.</a></p>
+			<img src="images/soccer.jpeg" id="soccer" width="400" height="200">
+		</div>
+		<br>
+		<br>
+		
+		<form name="name1" id="id1" action="form_proccessing" method="POST">
+	
+		Ваше имя: <input type="text" name="lastname"/><br>
+		Ваш email: <input type="text" name="email"/><br>
+		Пол: <select name="gender">
+			<option checked>Не выбрано</option>
+			<option value="male">Мужской</option>
+			<option value="female">Женский</option>
+		</select>
+		
+		<input type="hidden" name="user_id" value="13214132531" /><br>
+		
+		Пользователь <input type="radio" name="status" value="user">
+		Менеджер <input type="radio" name="status" value="manager">
+		Админ <input type="radio" name="status" value="admin"><br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    	<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    	<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    	<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+		
+		<input type="submit" name="submitit" value="Отправить">
+	</form>
+	
+	<form name="name2" id="id2">
+    	<br>
+		Ваше имя: <input type="text" name="lastname"/><br>
+		Ваш email: <input type="text" name="email"/><br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:"> 
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name3" id="id3">
+		<br>
+		Ваше имя: <input type="text" name="lastname"/><br>
+		Ваш email: <input type="email" name="email"/><br>
+		Ваш возраст: <input type="age" name="email"/><br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:"> 
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name4" id="id4">
+		<br>
+		Сообщение: <input type="text" name="email"/><br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name5" id="id5">
+		<br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name6" id="id6">
+		<br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name7" id="id7">
+		<br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:"> 
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name8" id="id8">
+		<br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name9" id="id9"> 
+		<br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+
+	<form name="name10" id="id10">
+		<br>
+		<input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+		<input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+		<input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+		<input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+	</form>
+		
+		
+	<script src="task.js"></script>
+		
+	</body>
+</html>
+
