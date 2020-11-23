@@ -92,31 +92,15 @@ function destroyTable() {
 }
 
 function deleteRow() {
-    var body = document.querySelector("body"),
-        table = document.querySelector("table"),
-		row = document.getElementById("rowDel").value,
-		cells = cols * rows;
-	
-	for (i=row*cols+1; i <= cells; i++){
-		cell = document.getElementById(i);
-		cell.id = i-cols;
-	}
-	
+    var table = document.querySelector("table"),
+		row = document.getElementById("rowDel").value;
+
 	if (row > rows){
 		alert("Такой строки не существует");
 		return;
 	}
 	
-	row = -row;
-	
-	rowDeleteString = "#" + row;
-	$(rowDeleteString).remove();
-	cellCounter = cellCounter - cols;
-	
-	for (var i=row-1; i >= -rows; i--){
-		row = document.getElementById(i);
-		row.id = i+1;
-	}
+	table.children[row].remove();
 	rows--;
 }
 
@@ -134,10 +118,13 @@ function magic() {
 		col2,
 		col3,
 		textHeight,
-		choice;
+		randRow,
+		randCell;
 	
-	choice = randomInteger(1, cellCounter);
-	randCell = document.getElementById(choice);
+	randRow = randomInteger(1, rows);
+	chosenRow = table.children[randRow]
+	randCol = randomInteger(0, cols-1);
+	randCell = chosenRow.children[randCol];
 	
 	rand = randomInteger(1, 4);
 	if (rand == 1 && randCell.children[0].tagName=="SPAN"){
