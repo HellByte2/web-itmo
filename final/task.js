@@ -5,8 +5,6 @@ function addTable() {
 		input = "",
 		but = "";
 	title = "";
-	rowCounter = -1;
-	cellCounter = 1;
 	butType = document.getElementById("width").value;
 	butWidth = document.getElementById("border").value;
 	
@@ -20,12 +18,8 @@ function addTable() {
 		
     for (var i = 0; i < rows; i++) {
         tr = document.createElement("tr");
-		tr.id = rowCounter;
-		rowCounter--;
         for (var j = 0; j < cols; j++) {
 			td = document.createElement("td");
-			td.id = cellCounter;
-			cellCounter++;
 			input = document.createElement("textarea");
 			but = document.createElement("input");
 			but.type = "button";
@@ -37,8 +31,7 @@ function addTable() {
         }
         table.appendChild(tr);
     }
-	rowCounter++;
-	cellCounter--;
+	
 	$("#form").attr("hidden", "");
 	$("#functions").removeAttr("hidden");
 	body.appendChild(table);
